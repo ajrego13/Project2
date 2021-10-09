@@ -1,6 +1,7 @@
 <section class="row">
     <div class="column">
-        <h2>Create New Post</h2>
+        <div class="card" style="width: 50rem"> 
+        <h2 c;ass="card-title">Create New Post</h2>
 
         <form class="create-form" action="/api/posts" method="POST">
             <div>
@@ -11,8 +12,9 @@
                 <label for="post-text">Text</label>
                 <textarea id="post-text" name="post-text"></textarea>
             </div>
-            <button type="submit" class="btn">Create</button>
+            <button type="submit" class="btn btn-primary">Create</button>
         </form>
+        </div>
     </div>
 
     {{#if posts.length}}
