@@ -1,16 +1,16 @@
 <section class="row">
-    <div class="column">
-        <div class="card" style="width: 50rem"> 
-        <h2 c;ass="card-title">Create New Post</h2>
+    <div class="column d-flex justify-content-center">
+        <div class="card d-flex" style="width: 20rem"> 
+        <h2 class="card-title d-flex">Create New Post</h2>
 
         <form class="create-form" action="/api/posts" method="POST">
-            <div>
-                <label for="post-title">Title</label>
+            <div style="margin-bottom: 10px;">
+                
                 <input type="text" id="title" name="post-title" placeholder="title">
             </div>
             <div>
-                <label for="post-text">Text</label>
-                <textarea id="post-text" name="post-text"></textarea>
+                
+                <textarea id="post-text" name="post-text" placeholder="post"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Create</button>
         </form>

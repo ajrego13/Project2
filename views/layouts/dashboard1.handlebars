@@ -16,8 +16,8 @@
                 <nav class"nav">
                     <a class="link" href="/">Home</a>
                     {{#if loggedIn}}
-                    <a href="/dashboard">Dashboard</a>
-                    <button id="logout" class="btn-no-style">Logout</button>
+                    <a class="btn btn-primary" href="/dashboard">Dashboard</a>
+                    <button id="logout" class="btn btn-primary">Logout</button>
                     {{else}}
                     <a href="/login">Login</a>
                     {{/if}}
